@@ -1,7 +1,7 @@
 package seeder
 
 import (
-	"goyave.dev/template/database/model"
+	"github.com/SteaceP/optimum_vape/database/model"
 
 	"github.com/bxcodec/faker/v3"
 	"goyave.dev/goyave/v4/database"

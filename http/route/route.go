@@ -1,7 +1,7 @@
 package route
 
 import (
-	"goyave.dev/template/http/controller/hello"
+	"github.com/SteaceP/optimum_vape/http/controller/hello"
 
 	"goyave.dev/goyave/v4"
 	"goyave.dev/goyave/v4/cors"

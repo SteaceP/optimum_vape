@@ -10,7 +10,7 @@ import "goyave.dev/goyave/v4/validation"
 
 // Learn more about validation here: https://goyave.dev/guide/basics/validation.html
 
-// This is the validation rules for the "/echo" route, which is simply
+// EchoRequest This is the validation rules for the "/echo" route, which is simply
 // writing the input as a response.
 var (
 	EchoRequest = validation.RuleSet{

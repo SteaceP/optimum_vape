@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"goyave.dev/template/http/route"
+	"github.com/SteaceP/optimum_vape/http/route"
 
 	"goyave.dev/goyave/v4"
 	"goyave.dev/goyave/v4/validation"
@@ -51,11 +51,11 @@ func (suite *HelloTestSuite) TestEcho() {
 		if resp != nil { // Expect validation errors (field "text" is required)
 			defer resp.Body.Close()
 			suite.Equal(422, resp.StatusCode)
-			json := map[string]validation.Errors{}
-			err := suite.GetJSONBody(resp, &json)
+			j := map[string]validation.Errors{}
+			err := suite.GetJSONBody(resp, &j)
 			suite.Nil(err)
 			if err == nil {
-				textErrors, ok := json["validationError"]["text"]
+				textErrors, ok := j["validationError"]["text"]
 				suite.True(ok)
 				suite.Equal(2, len(textErrors.Errors))
 			}

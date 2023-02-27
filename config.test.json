@@ -1,6 +1,6 @@
 {
     "app": {
-        "name": "goyave.dev/template",
+        "name": "github.com/SteaceP/optimum_vape",
         "environment": "test",
         "debug": false,
         "defaultLanguage": "en-US"
@@ -22,10 +22,10 @@
     "database": {
         "connection": "none",
         "host": "127.0.0.1",
-        "port": 3306,
-        "name": "goyave",
-        "username": "root",
-        "password": "root",
+        "port": 5432,
+        "name": "db",
+        "username": "vape",
+        "password": "password",
         "options": "charset=utf8mb4&collation=utf8mb4_general_ci&parseTime=true&loc=Local",
         "maxOpenConnections": 20,
         "maxIdleConnections": 20,
