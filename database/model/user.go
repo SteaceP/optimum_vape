@@ -35,7 +35,8 @@ type User struct {
 
 // UserGenerator generator function for the User model.
 // Generate users using the following:
-//  database.NewFactory(model.UserGenerator).Generate(5)
+//
+//	database.NewFactory(model.UserGenerator).Generate(5)
 func UserGenerator() interface{} {
 	user := &User{}
 	user.Name = faker.Name()
